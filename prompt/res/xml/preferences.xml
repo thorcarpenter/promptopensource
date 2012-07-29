@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="@string/options_str">
+                <ListPreference
+                        android:title="@string/mode"
+                        android:summary="@string/mode_summary"
+                        android:key=".travelMode"
+                        android:defaultValue="0"
+                        android:entries="@array/travel_modes_array"
+                        android:entryValues="@array/travel_modes_values" />
+                <ListPreference
+                        android:title="@string/lead_time_str"
+                        android:summary="@string/lead_time_summary"
+                        android:key=".leadTime"
+                        android:defaultValue="15"
+                        android:entries="@array/lead_time_array"
+                        android:entryValues="@array/lead_time_values" />
+        </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Prompt</string>
+    <string name="at">at</string>
+    <string name="time_to_leave_for">Time to leave for</string>
+    <string name="travel_time">travel time</string>
+    <string name="minutes">minutes</string>
+    <string name="next_event_id">Notification id for the next event</string>
+    <string name="license_service_notification_id">Notification id for the licensing service</string>
+    <string name="title_start">Start Prompt</string>
+    <string name="title_stop">Stop Prompt</string>
+    <string name="local_service_label">Prompt Service</string>
+    <string name="local_service_started">Prompt Running</string>
+    <string name="local_service_stopped">Prompt Stopped</string>
+    <string name="local_service_connected">Service Connected</string>
+    <string name="local_service_disconnected">Service Disconnected</string>
+    <string name="help">Help</string>
+    <string name="help_msg">Using your calendar and current GPS location, Prompt notifies you when you should leave for your next event.\n\nIt is important that you enter an accurate location in your event details.  For example, \"Seattle\" would work but \"100 Pike St, Seattle\" would be better.\n\nEvents without a valid location will be ignored.\n\nsupport@lucyapps.com</string>    
+    <string name="invalid_license_str">You do not have a valid Prompt license.</string>
+    <string name="buy_prompt_license_str">Buy a Prompt license.</string>
+    <string name="ok_str">OK</string>
+    <string name="cancel_str">Cancel</string>
+    <string name="options_str">Settings</string>
+    <string name="mode">Preferred Travel Mode</string>
+    <string name="mode_summary">Drive, walk or bike?</string>
+    <string name="default_travel_mode">driving</string>
+    <string-array name="travel_modes_array">
+        <item>driving</item>
+        <item>walking</item>
+        <item>bicycling</item>
+    </string-array>
+    <string-array name="travel_modes_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="lead_time_str">Lead Time</string>
+    <string name="lead_time_summary">Reminder time before you should leave for your next event.</string>
+    <string-array name="lead_time_array">
+        <item>0 minutes</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="lead_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+</resources>

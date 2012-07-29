@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.lucyapps.prompt" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="4" />
+	<!-- Sends intents assuming Google Maps is the receiver but doesn't explicitly use Google Maps. -->
+	<uses-library android:name="com.google.android.maps" />
+	<application android:debuggable="true" android:icon="@drawable/ic_prompt_launcher"
+		android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name">
+		<activity android:name=".PromptActivity" android:label="Prompt">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+		        android:name=".Preferences"
+		        android:label="@string/options_str">
+		</activity>
+		<service android:name=".detail.PromptService">
+			<intent-filter>
+				<action android:name="com.lucyapps.prompt.detail.PromptService" />
+			</intent-filter>
+		</service>
+		<service android:name=".detail.LicensingService">
+			<intent-filter>
+				<action android:name="com.lucyapps.prompt.detail.LicensingService" />
+			</intent-filter>
+		</service>
+		<receiver android:name=".detail.PromptBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.PACKAGE_REPLACED" />
+				<action android:name="com.lucyapps.prompt.detail.PromptBroadcastReceiver" />
+			</intent-filter>
+		</receiver>
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+</manifest>
